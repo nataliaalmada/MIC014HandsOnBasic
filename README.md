@@ -9,3 +9,5 @@ O Botão de Pânico com ESP32 é projetado para situações de emergência. Quan
 
 Caso 1: No simulador Wokwi, o sistema simula o envio da mensagem exibindo-a no Monitor Serial e piscando um LED virtual.
 Caso 2: Na implementação física, o ESP32 envia mensagens reais para contatos configurados via CallMeBot, utilizando a conexão WiFi.
+
+# Caso 1: Prototipagem no Wokwi
