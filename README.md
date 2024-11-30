@@ -23,3 +23,61 @@ Ou, caso prefira, faça o download da pasta **Caso 1 - Projeto MIC014Aula01** do
 Veja abaixo uma captura de tela da mensagem de alerta simulada:
 
 ![Mensagem de Alerta Simulada](https://github.com/nataliaalmada/MIC014HandsOnBasic/blob/main/Caso%201%20-%20Projeto%20MIC014Aula01/Mensagem%20de%20Alerta%20Simula%C3%A7%C3%A3o%20Aula%201%20MIC014.png)
+
+
+# **Caso 2: Implementação Real com IDE Arduino**
+> **Disclaimer:** Este projeto foi desenvolvido e testado em ambiente virtual, portanto, pode ser que alguns ajustes sejam necessários para garantir o funcionamento no hardware físico, já que o circuito não foi montado na vida real. Caso identifique melhorias ou problemas, sinta-se à vontade para contribuir ou relatar.
+
+---
+O código-fonte para a implementação real do projeto está disponível no seguinte arquivo:  
+[ProjetoMIC014Aula01ESP32.ino](https://github.com/nataliaalmada/MIC014HandsOnBasic/blob/main/Caso%202%20-%20Projeto%20MIC014Aula01/ProjetoMIC014Aula01ESP32.ino).
+
+---
+
+## **Configurações Necessárias para Implementação**
+
+Antes de compilar e carregar o código no ESP32, certifique-se de modificar os seguintes dados no arquivo para adequá-los à sua rede WiFi e conta do CallMeBot:
+
+1. **Credenciais da Rede WiFi:**
+   - Substitua `SEU_SSID` e `SUA_SENHA` pelos dados da sua rede:
+     ```cpp
+     const char* ssid = "SEU_SSID";
+     const char* password = "SUA_SENHA";
+     ```
+
+2. **Dados do CallMeBot:**
+   - Atualize o número de WhatsApp e a API Key fornecida pelo CallMeBot:
+     ```cpp
+     String phoneNumber = "SEU_NUMERO_WHATSAPP";
+     String apiKey = "SUA_APIKEY";
+     ```
+
+3. **Mensagem Personalizada:**
+   - Altere a mensagem que será enviada:
+     ```cpp
+     String mensagem = "ALERTA! Estou em perigo. Preciso de ajuda imediatamente.";
+     ```
+
+---
+
+## **Passos para Implementação**
+1. **Configuração do Ambiente:**
+   - Instale a [IDE Arduino](https://www.arduino.cc/en/software).
+   - Configure a placa ESP32 na IDE.
+
+2. **Montagem do Circuito:**
+   - Conecte os componentes ao ESP32:
+     - Botão no GPIO 21.
+     - LED externo (com resistor de 100Ω) no GPIO 23.
+     - LED interno no GPIO 2.
+
+3. **Teste e Upload:**
+   - Abra o arquivo `ProjetoMIC014Aula01ESP32.ino` na IDE Arduino.
+   - Faça as modificações necessárias e carregue o código no ESP32.
+   - Pressione o botão e verifique o funcionamento:  
+     - O LED externo piscará durante o envio.
+     - A mensagem será enviada para o WhatsApp configurado.
+
+---
+
+Para dúvidas ou problemas abra uma **issue**. 😊
