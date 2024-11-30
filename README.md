@@ -11,3 +11,6 @@ Caso 1: No simulador Wokwi, o sistema simula o envio da mensagem exibindo-a no M
 Caso 2: Na implementação física, o ESP32 envia mensagens reais para contatos configurados via CallMeBot, utilizando a conexão WiFi.
 
 # Caso 1: Prototipagem no Wokwi
+Faça a simulação no LINK: https://wokwi.com/projects/415930697193758721
+Ou faça o download da pasta Caso 1 - Projeto MIC014Aula01 no repositório e a utilize para fazer simulação na plataforma Wokwi https://wokwi.com
+
