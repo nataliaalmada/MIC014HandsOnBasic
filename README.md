@@ -51,8 +51,22 @@ Antes de compilar e carregar o código no ESP32, certifique-se de modificar os s
      String phoneNumber = "SEU_NUMERO_WHATSAPP";
      String apiKey = "SUA_APIKEY";
      ```
+---
 
-3. **Mensagem Personalizada:**
+## **Configuração do CallMeBot**
+
+> **Nota:** O serviço CallMeBot exige uma configuração inicial no WhatsApp para permitir o envio de mensagens. Siga os passos abaixo para configurá-lo.
+
+- . **Salve o número do CallMeBot:**  
+   Salve o número **+34 644 81 58 78** nos seus contatos do WhatsApp com um nome como "CallMeBot".
+
+- . **Envie uma mensagem de autorização:**  
+   Abra o WhatsApp e envie para o contato "CallMeBot" a mensagem abaixo:
+
+   ```text
+   I allow callmebot to send me messages
+
+- . **Mensagem Personalizada:**
    - Altere a mensagem que será enviada:
      ```cpp
      String mensagem = "ALERTA! Estou em perigo. Preciso de ajuda imediatamente.";
